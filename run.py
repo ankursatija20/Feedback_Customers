@@ -3,7 +3,7 @@
 import os
 import requests
 
-path = "/home/kali/Realwrld/week2/data/feedback/"
+path = "/home/kali/Feedback_Customers/data/feedback/"
 
 keys =["title","name","date","feedback"]
 
@@ -20,7 +20,7 @@ for file in folder:
             fb[keys[keycount]] =value
             keycount +=1
     print(fb)
-    response = requests.post("http://10.0.2.15/feedback/",
+    response = requests.post("http://localhost/feedback/",
     json = fb)
 
 
