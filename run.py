@@ -22,9 +22,4 @@ for file in folder:
     print(fb)
     response = requests.post("http://localhost/feedback/",
     json = fb)
-
-
-
-
-    print(response.request.body)
     print(response.status_code)
