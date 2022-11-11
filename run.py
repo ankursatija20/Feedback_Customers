@@ -20,6 +20,6 @@ for file in folder:
             fb[keys[keycount]] =value
             keycount +=1
     print(fb)
-    response = requests.post("http://localhost/feedback/",
+    response = requests.post("http://localhost/upload",
     json = fb)
     print(response.status_code)
