@@ -2,8 +2,8 @@
 
 import os
 import requests
-
-path = "/home/kali/Feedback_Customers/data/feedback/"
+user = os.getenv('USER')
+path = "/home/{}/Feedback_Customers/data/feedback/".format(user)
 
 keys =["title","name","date","feedback"]
 
